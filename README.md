@@ -6,6 +6,9 @@ As of this writing, it has a simple log in, account creation, will show the late
 
 It is configured to run with the following schema (MySQL)
 
+```
+CREATE DATABASE `fitness_tracker`;
+
 CREATE TABLE `exercise_history` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(10) unsigned NOT NULL,
@@ -28,3 +31,4 @@ CREATE TABLE `users` (
   UNIQUE KEY `id_UNIQUE` (`id`),
   UNIQUE KEY `username_UNIQUE` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+```
